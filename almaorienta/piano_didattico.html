@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="it">
+
+<head>
+	<title>Università degli studi di Bologna - Alma Mater Studiorum - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 		<link rel="stylesheet" href="assets/css/main.css" />
+				<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<style>
+		 .follow{
+		 margin: 0 auto !important;
+		}
+		.anno{
+		    padding:1%;
+			margin:1%;
+			border: 2px dashed black;
+		}
+		.anno > h2 {
+			text-decoration: underline;
+		}
+		.tab{
+			background: linear-gradient(to bottom right, darkorange,yellow);
+			border: 4px solid black;
+			border-radius: 15px;
+			padding: 1%;
+			margin: 1%;
+		}
+		h2{
+			padding: 1%;
+			margin: 1%;
+		}
+		ul {
+			list-style-type: square;
+		}  
+	  @media screen and (max-width: 480px) {
+			button{
+				display: block;
+				margin: 0 auto;
+				width: 60%;
+			}
+			
+		}
+	</style>
+</head>
+
+<body>
+
+    <img class="img" src="images/uniboTrain1.jpg" alt="Train" />
+	<div class="intro">
+  	    <h1>UniBo Orient Express</h1>
+     </div>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="">Scuola di Agraria e Medicina veterinaria </a></li>
+							<li><a href="">Scuola di Economia, Management e Statistica</a></li>
+							<li><a href="">Scuola di Farmacia, Biotecnologie e Scienze motorie</a></li>
+							<li><a href="giurisprudenza.html">Scuola di Giurisprudenza </a></li>
+							<li><a href="">Scuola di Ingegneria e Architettura </a></li>
+							<li><a href="">Scuola di Lettere e Beni culturali </a></li>
+							<li><a href="">Scuola di Lingue e Letterature, Traduzione e Interpretazione</a></li>
+							<li><a href="medicina.html">Scuola di Medicina e Chirurgia</a></li>
+							<li><a href="">Scuola di Psicologia e Scienze della Formazione</a></li>
+							<li><a href="">Scuola di Scienze</a></li>
+							<li><a href="">Scuola di Scienze Politiche</a></li>
+						</ul>
+					</nav>
+</div>
+
+ <div class="tab">
+ 	 <header class="section_header">Piano didattico </header>
+
+ <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openYear(event,'primo')">1° anno</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'secondo')">2° anno</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'terzo')">3° anno</button>
+  </div>
+  
+  <div id="primo" class="anno">
+    <h2>1° anno</h2>
+	<ul>
+		<li>Fisica ad indirizzo biomedico ( 1 CFU)</li>
+		<li>Informatica ( 3 CFU)</li>
+		<li>Laboratorio Informatico ( 1 CFU)</li>
+		<li>Statistica medica e per la ricerca ( 2 CFU)</li>
+		<li>Biologia applicata agli studi biomedici ( 3 CFU)</li>
+		<li>Chimica e biochimica ( 1 CFU)</li>
+		<li>Genetica medica( 1 CFU)</li>
+		<li>Anatomia umana e dell'apparato stomatognatico( 4 CFU)</li>
+		<li>Fisiologia umana e dell'apparato stomatognatico( 3 CFU)</li>
+		<li>Istologia( 2 CFU)</li>
+		<li>Anatomia patologica( 2 CFU)</li>
+		<li>Igiene generale ed applicata( 2 CFU)</li>
+		<li>Microbiologia generale( 2 CFU)</li>
+		<li>Laboratorio professionale 1( 1 CFU)</li>
+		<li>Patologia generale( 1 CFU)</li>
+		<li>Microbiologia clinica( 2 CFU)</li>
+		<li>Parodontologia 1( 2 CFU)</li>
+		<li>Tecniche di igiene orale domiciliare( 2 CFU)</li>
+		<li>Tecniche di igiene orale professionale 1( 2 CFU)</li>
+		<li>Tecniche di semeiotica e monitoraggio del cavo orale( 2 CFU)</li>
+		<li>Biotetica( 1 CFU)</li>
+		<li>Psicologia della comunicazione in ambito sanitario( 2 CFU)</li>
+		<li>Psicologia generale( 1 CFU)</li>
+		<li>Storia della medicina( 3 CFU)</li>
+		<li>Tirocinio 1( 10 CFU)</li>
+	</ul>
+   </div>
+
+  <div id="secondo" class="anno" style="display:none">
+    <h2>2° anno</h2>
+	<ul>
+		<li>Anestesia BLS( 1 CFU)</li>
+		<li>Anestesia e rianimazione( 1 CFU)</li>
+		<li>Farmaco terapia( 1 CFU)</li>
+		<li>Farmacologia generale( 1 CFU)</li>
+		<li>Malattie infettive( 1 CFU)</li>
+		<li>Medicina interna( 3 CFU)</li>
+		<li>Patologia speciale odontostomatologica( 3 CFU)</li>
+		<li>Radiologia odontostomatologica( 1 CFU)</li>
+		<li>Radioprotezione( 1 CFU)</li>
+		<li>Tecniche di semeiotica e monitoraggio del cavo orale 2( 1 CFU)</li>
+		<li>Laboratorio professionale 2( 1 CFU)</li>
+		<li>Parodontologia 2( 2 CFU)</li>
+		<li>Scienze dell'alimentazione( 1 CFU)</li>
+		<li>Tecniche di igiene orale professionale 2( 3 CFU)</li>
+		<li>Odontoiatria preventiva e di comunita' 1( 2 CFU)</li>
+		<li>Ortognatodonzia e gnatologia( 2 CFU)</li>
+		<li>Pedodonzia( 2 CFU)</li>
+		<li>Laboratorio professionale 3( 1 CFU)</li>
+		<li>Odontoiatria conservatrice, endodonzia e materiali dentari( 3 CFU)</li>
+		<li>Tecniche di igiene orale professionale 3( 3 CFU)</li>
+		<li>Tirocinio 2( 26 CFU)</li>
+	</ul>  
+	</div>
+
+  <div id="terzo" class="anno" style="display:none">
+    <h2>3° anno</h2>
+	<ul>
+		<li>Chirurgia orale( 2 CFU)</li>
+		<li>Implantologia( 1 CFU)</li>
+		<li>Otorinolaringoiatria( 1 CFU)</li>
+		<li>Protesi dentaria( 2 CFU)</li>
+		<li>Tirocinio formativo extrauniversitario( 2 CFU)</li>
+		<li>Clinica odontostomatologica( 1 CFU)</li>
+		<li>Dermatologia( 1 CFU)</li>
+		<li>Patologia speciale odontostomatologica nei pazienti con particolari necessita'( 1 CFU)</li>
+		<li>Tecniche di igiene orale nei pazienti con particolari necessita'( 2 CFU)</li>
+		<li>Odontoiatria preventiva e di comunita' 2( 2 CFU)</li>
+		<li>Psicologia sociale( 1 CFU)</li>
+		<li>Scienze e tecniche di igiene orale applicate alla comunita'( 2 CFU)</li>
+		<li>Ergonomia e organizzazione professionale( 1 CFU)</li>
+		<li>Medicina del lavoro( 1 CFU)</li>
+		<li>Medicina legale( 1 CFU)</li>
+		<li>Psicologia del lavoro e delle organizzazioni( 1 CFU)</li>
+		<li>Statistica per la ricerca sperimentale e tecnologica( 2 CFU)</li>
+		<li>Tirocinio 3( 24 CFU)</li>
+	</ul>    
+</div>
+</div>
+
+<footer id="footer">
+	<div class="inner">
+			<section class="follow">
+				<h2>Follow</h2>
+					<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+			</section>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved</li>
+					</ul>
+	</div>
+						
+</footer>
+<script>
+function openYear(evt, year) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("anno");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(year).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+ </body>
+</html>

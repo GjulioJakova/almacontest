@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="it">
+
+<head>
+	<title>Università degli studi di Bologna - Alma Mater Studiorum - Home</title>
+	<meta charset="utf-8" />
+
+	<!-- Aggiunto bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Aggiunto phantom -->
+ 		<link href='calendar/fullcalendar.min.css' rel='stylesheet' />
+		<link href='calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+		<script src='calendar/lib/moment.min.js'></script>
+		<script src='calendar/lib/jquery.min.js'></script>
+		<script src='calendar/fullcalendar.min.js'></script>
+
+  <style>
+	#calendar {
+		max-width: 900px;
+		margin: 1% auto;
+		padding: 1%;
+	}  
+    .fc-day-grid-event > .fc-content {
+    white-space: inherit;
+}
+ .fc-month-view span.fc-title{
+         white-space: normal;
+   }
+       .fc-day-grid-event > .fc-content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer; // for showing title 
+    max-height:20px; // can be adjusted according to your requirement
+}
+
+	</style>
+
+</head>
+
+<body>
+  <div id="calendar"></div>
+ 
+
+<script>
+	
+	$(document).ready(function() {
+
+$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+     defaultView: 'month',
+			eventLimit: false, // allow "more" link when too many events
+			events: [
+				{
+					title: 'Bando ING',
+					start: '2017-05-05',
+					color: 'red'
+				},
+				{
+					title: 'Bando MED',
+					start: '2017-05-01',
+					color: 'red'
+				},
+				{
+					title: 'Test ING',
+					start: '2017-05-20'
+ 				},
+				{
+					title: 'Test MED',
+					start: '2017-05-19'
+ 				}
+			],
+			 eventClick: function(calEvent, jsEvent, view) {
+
+       $(".fc-content").each(function(){
+  $(this).attr("title",$(this).text());
+  });
+
+    }
+		});		 
+
+
+	});
+	</script>
+</body>	
+	<!--
+ include 'excel_reader.php';     // include the class
+
+// creates an object instance of the class, and read the excel file data
+$excel = new PhpExcelReader;
+$excel->read('scadenze.xls');
+
+function sheetData($sheet){
+	 	
+	$x = 1;
+ 		
+	$eventi = array();
+	
+	while($x <= $sheet['numRows']){
+		$y = 1;
+		while($y <= $sheet['numCols']){
+	      $cell = isset($sheet['cells'][$x][$y]) ? $sheet['cells'][$x][$y] : '';
+		  if($cell != ""){
+			   $cellPrec = $sheet['cells'][$x][1];
+			   $cellDef = $cellPrec . "|" . $cell;
+			   if($cell != $cellPrec){
+				array_push($eventi,$cellDef);
+			   }
+  		  }
+		  $y++;
+		}
+ 	    $x++;
+	}
+		echo "<script> var eventi = ". json_encode($eventi)."</script>";
+
+} 
+
+ $excel_data =  sheetData($excel->sheets[0]);
+ 		//per poter leggere da file excel
+		var myCalendar = $('#calendar'); 
+		myCalendar.fullCalendar();
+		var myEvent = {
+		title:"Scadenza bando Ing",
+		start: '2017-03-28',
+		end: '2017-03-28',
+		color: 'red'
+		};
+		
+		for(var option in eventi){
+		var pair = eventi[option].split("|");
+		var date = pair[1];
+        var newdate = date.split("/").reverse().join("-");
+
+		var myEvent = {
+
+		title: pair[0],
+		start: newdate,
+		end: newdate,
+		color: 'red'
+		};
+		
+		myCalendar.fullCalendar( 'renderEvent', myEvent );
+
+		}-->
+</html>
+

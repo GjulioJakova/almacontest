@@ -8,14 +8,7 @@ $excel->read('test.xls');
 if(isset($_POST['luogo'])){
 					$att = $_POST['luogo'];
 					$GLOBALS['$luogo'] = substr($att,strpos($att,"|")+1);					
-					/*$GLOBALS['$luogo'] = $_POST['luogo'];
-					$att = $_POST['attivita'];
-					$GLOBALS['$attivita'] = substr($att,strpos($att,"|")+1);
-					//remove whitespaces
-					trim($attivita);
-					trim($luogo);
-					echo "$luogo<br>";
-					echo "$attivita";*/
+					 
 }
 					
 function sheetData($sheet){

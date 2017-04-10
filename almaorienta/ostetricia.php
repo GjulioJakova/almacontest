@@ -222,20 +222,6 @@ function sheetData($sheet){
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
  			<script src="assets/js/main.js"></script>
-<script>
-function openYear(evt, year) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("anno");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(year).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
+ 
 	</body>
 </html>

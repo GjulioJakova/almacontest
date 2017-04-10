@@ -155,14 +155,14 @@ function sheetData($sheet){
 					<section class="sect">
 					  <header class="section_header">Corso di Infermieristica  </header>
 <h3>Definizione</h3>
-<p>Professionisti sanitari responsabili dell’assistenza generale infermieristica preventiva, curativa, pagliativa, riabilitativa di natura
+<p>Professionisti sanitari responsabili dell'assistenza generale infermieristica preventiva, curativa, pagliativa, riabilitativa di natura
  tecnica, relazionale, educativa.</p>
 <h3>Funzioni</h3>
 <ul>
-	<li>Prevenzione delle malattie, assistenza dei malati e dei disabili in tutte le età</li>
+	<li>Prevenzione delle malattie, assistenza dei malati e dei disabili in tutte le eta'</li>
 	<li>Educazione sanitaria</li>
 	<li>Garantiscono la corretta applicazione delle prescrizioni diagnostico-terapeutiche</li>
-	<li>Identificazione dei bisogni di assistenza infermieristica della persona e della collettività e formulazione di relativi obiettivi</li>
+	<li>Identificazione dei bisogni di assistenza infermieristica della persona e della collettivita' e formulazione di relativi obiettivi</li>
 </ul>
  
  
@@ -177,7 +177,7 @@ function sheetData($sheet){
 	<li>Ambulatori</li>
 	<li>Consultori</li>
 	<li>Residenze sanitarie-assistenziali o strutture socio-sanitarie</li>
-	<li>Altre strutture nell’ambito della cura primaria</li>
+	<li>Altre strutture nell'ambito della cura primaria</li>
 </ul>
  
   <h3>Corsi che ti potrebbero interessare</h3>
@@ -223,20 +223,6 @@ function sheetData($sheet){
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
  			<script src="assets/js/main.js"></script>
-<script>
-function openYear(evt, year) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("anno");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(year).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
+ 
 	</body>
 </html>

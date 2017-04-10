@@ -63,7 +63,7 @@ function sheetData($sheet){
 
 <!DOCTYPE HTML>
  
-<html>
+<html lang="it">
 	<head>
 		<title>Giurisprudenza </title>
 		<meta charset="utf-8" />
@@ -188,7 +188,7 @@ function sheetData($sheet){
 </p>
 
  <h3>Contatta tutor del corso</h3>
- <p><b>Mario Rossi</b> : mario.rossi@unibo.it</p>
+ <p><strong>Mario Rossi</strong> : mario.rossi@unibo.it</p>
 
  
 

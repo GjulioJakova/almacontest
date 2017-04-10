@@ -30,8 +30,7 @@ $excel->read('test.xls');
 
 function sheetData($sheet){
 	$slct1 = "slct1";
-	//$slct2 = "slct2";
-	
+ 	
 	$scuole = array();
 	
 	$re = "<select id='slct1' name='scuola' onchange='populate()'>";
@@ -55,31 +54,7 @@ function sheetData($sheet){
     $re .="</select>";
 
 	
-	/*$re .= "<label>Attivita': <select id='slct2' name='attivita' required>";
-	$x = 1;
-	
-	$optionArray = array("|");
-	
-	while($x <= $sheet['numRows']){
-		$y = 3;
-		while($y <= $sheet['numCols']){
-	      $cell = isset($sheet['cells'][$x][$y]) ? $sheet['cells'][$x][$y] : '';
-		  if(isset($sheet['cells'][$x][$y]) && $cell != ""){
-			   $cellPrec = $sheet['cells'][$x][1];
-			   $cellDef = $cellPrec . "|" . $cell;
-			   
-			   if (!in_array($cellDef, $optionArray)) {
-					array_push($optionArray,$cellDef);
-			   }
-	//		   $re .= "<option value='$cellPrec'> $cell </option>";
- 		  }
-		  $y++;
-		}
- 	    $x++;
-	}
-	echo "<script> var optArray = ". json_encode($optionArray)."</script>";
- 
-	return $re .'</select> </label>';*/
+	 
 	
 	$re .= "<label>Luogo di lavoro: <select id='slct2' name='luogo' required>";
 	$x = 1;
@@ -97,8 +72,7 @@ function sheetData($sheet){
 			   if (!in_array($cellDef, $optionArray)) {
 					array_push($optionArray,$cellDef);
 			   }
-	//		   $re .= "<option value='$cellPrec'> $cell </option>";
- 		  }
+  		  }
 		  $y++;
 		}
  	    $x++;
@@ -111,9 +85,7 @@ function sheetData($sheet){
 }
 
    $excel_data =  sheetData($excel->sheets[0]);  
-/*if (isset($_POST['scuola'])) {   
-       unset($_POST['scuola']);
-}*/
+ 
 ?>
 <!DOCTYPE HTML> 
 <html lang="it">

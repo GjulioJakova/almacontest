@@ -58,7 +58,7 @@ function sheetData($sheet){
 ?>
 
 <!DOCTYPE HTML>
-<html>
+<html lang="it">
 	<head>
 		<title>ALMA Orienta</title>
 		<meta charset="utf-8" />

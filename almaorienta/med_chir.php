@@ -15,7 +15,7 @@ function sheetData($sheet){
 		$y = 4;
 		while($y <= $sheet['numCols']){
 	      $cell = isset($sheet['cells'][$x][$y]) ? $sheet['cells'][$x][$y] : '';
- 		  if(isset($sheet['cells'][$x][$y]) && $sheet['cells'][$x][2] == "Igiene dentaleMG"){
+ 		  if(isset($sheet['cells'][$x][$y]) && $sheet['cells'][$x][2] == "Medicina e chirurgia"){
 			   $cellPrec = $sheet['cells'][$x][$y];
  			   array_push($luoghi,$cellPrec);
  		  }
@@ -37,7 +37,7 @@ function sheetData($sheet){
 			   $cellPrec = $sheet['cells'][$x][2];
 			   $url = $sheet['cells'][$x][3];
 			   $str ="<li><a href='$url'>$cellPrec</a></li>";
-			   if (!in_array($str, $corsi) && $cellPrec != "Igiene dentaleMG") {
+			   if (!in_array($str, $corsi) && $cellPrec != "Medicina e chirurgia") {
 					array_push($corsi,$str);
 			   }
   		  }
@@ -63,7 +63,7 @@ function sheetData($sheet){
 
 <!DOCTYPE HTML>
  
-<html>
+<html lang="it">
 	<head>
 		<title>Alma Orienta</title>
 		<meta charset="utf-8" />
@@ -183,7 +183,7 @@ function sheetData($sheet){
 </p>
 
  <h3>Contatta tutor del corso</h3>
- <p><b>Mario Rossi</b> : mario.rossi@unibo.it</p>
+ <p><strong>Mario Rossi</strong> : mario.rossi@unibo.it</p>
 
 <button class="rounded" id="butt1" onclick="location.href='http://corsi.unibo.it/medicinaechirurgia/Pagine/default.aspx'">Collegamento sito</button>
 <button class="rounded" id="butt2" onclick="location.href='test_ammissione.html'">Test d'ammissione</button>

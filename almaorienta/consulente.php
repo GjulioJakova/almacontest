@@ -63,7 +63,7 @@ function sheetData($sheet){
 
 <!DOCTYPE HTML>
  
-<html>
+<html lang="it">
 	<head>
 		<title>Giurisprudenza </title>
 		<meta charset="utf-8" />
@@ -211,7 +211,7 @@ assistenza sociale. Questa figura professionale, disciplinata dalla legge n. 12 
 </p>
 
  <h3>Contatta tutor del corso</h3>
- <p><b>Mario Rossi</b> : mario.rossi@unibo.it</p>
+ <p><strong>Mario Rossi</strong> : mario.rossi@unibo.it</p>
  
 
 <button class="rounded" id="butt1" onclick="location.href='http://corsi.unibo.it/Laurea/ConsulenteLavoroRelazioniAziendali/Pagine/default.aspx'">Collegamento sito</button>
